@@ -8,7 +8,7 @@ on:
   workflow_dispatch:  
 
 env:
-  WORKING_DIRECTORY: p2--Amplifire/Parlezentree_Backend
+  WORKING_DIRECTORY: Parlezentree_Backend
   
 jobs:
   build:
