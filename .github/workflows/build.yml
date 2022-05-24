@@ -22,9 +22,9 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore ${{env.WORKING_DIRECTORY}}
+      run: dotnet restore ${{env.WORKING_DIRECTORY}}/ParlezentreeApi
     - name: Build
-      run: dotnet build --no-restore ${{env.WORKING_DIRECTORY}}
+      run: dotnet build --no-restore ${{env.WORKING_DIRECTORY}}/ParlezentreeApi
     - name: Test
       run: dotnet test --no-build --verbosity normal ${{env.WORKING_DIRECTORY}}
   
