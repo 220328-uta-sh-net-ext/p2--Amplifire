@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  parlezentreeapi:
+    image: ${DOCKER_REGISTRY-}parlezentreeapi
+    build:
+      context: .
+      dockerfile: ParlezentreeApi/Dockerfile
