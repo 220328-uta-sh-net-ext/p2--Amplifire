@@ -25,3 +25,9 @@
 /Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeApi/obj/Debug/net6.0/ParlezentreeApi.pdb
 /Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeApi/obj/Debug/net6.0/ParlezentreeApi.genruntimeconfig.cache
 /Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeApi/obj/Debug/net6.0/ref/ParlezentreeApi.dll
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeApi/bin/Debug/net6.0/Humanizer.dll
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeApi/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
