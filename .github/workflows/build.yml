@@ -26,7 +26,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore ${{env.WORKING_DIRECTORY}}/ParlezentreeApi
     - name: Test
-      run: dotnet test --no-build --verbosity normal ${{env.WORKING_DIRECTORY}}
+      run: dotnet test --no-build --verbosity normal ${{env.WORKING_DIRECTORY}}/ParlezentreeApi
   
   docker-image-build:
     runs-on: ubuntu-latest
