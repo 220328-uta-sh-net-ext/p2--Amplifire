@@ -10,7 +10,18 @@ public class UserRepository : IUserRepository
     }
     public string addUser(User user)
     {
-        throw new NotImplementedException();
+        var name = user.FirstName;
+        db.Users.Add(user);
+        var result=db.SaveChanges();
+        if (result == 1)
+        {
+            return "user is added.";
+        }
+        else
+        {
+            return "user is not added.";
+        }
+       
     }
 
 
@@ -19,5 +30,8 @@ public class UserRepository : IUserRepository
     {
         return db.Users.ToList();
     }
+
+
+   
 }
 
