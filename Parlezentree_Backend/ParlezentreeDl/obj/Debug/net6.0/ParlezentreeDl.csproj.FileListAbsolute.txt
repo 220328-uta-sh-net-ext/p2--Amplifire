@@ -1,0 +1,14 @@
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/bin/Debug/net6.0/ParlezentreeDl.deps.json
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/bin/Debug/net6.0/ParlezentreeDl.runtimeconfig.json
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/bin/Debug/net6.0/ParlezentreeDl.dll
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/bin/Debug/net6.0/ParlezentreeDl.pdb
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/obj/Debug/net6.0/ParlezentreeDl.csproj.AssemblyReference.cache
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/obj/Debug/net6.0/ParlezentreeDl.GeneratedMSBuildEditorConfig.editorconfig
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/obj/Debug/net6.0/ParlezentreeDl.AssemblyInfoInputs.cache
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/obj/Debug/net6.0/ParlezentreeDl.AssemblyInfo.cs
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/obj/Debug/net6.0/ParlezentreeDl.csproj.CoreCompileInputs.cache
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/obj/Debug/net6.0/ParlezentreeDl.dll
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/obj/Debug/net6.0/refint/ParlezentreeDl.dll
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/obj/Debug/net6.0/ParlezentreeDl.pdb
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/obj/Debug/net6.0/ParlezentreeDl.genruntimeconfig.cache
+/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/obj/Debug/net6.0/ref/ParlezentreeDl.dll
