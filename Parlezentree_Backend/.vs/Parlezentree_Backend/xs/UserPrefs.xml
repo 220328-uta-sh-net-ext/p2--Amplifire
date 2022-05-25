@@ -1,17 +1,41 @@
-﻿<Properties StartupConfiguration="{DE842A19-5874-4D04-8F70-F1E4E9909552}|Default">
+﻿<Properties StartupConfiguration="{2F0302C2-65E9-45D9-9E9C-9E567CFC39DD}|Default">
   <MonoDevelop.Ide.ItemProperties.ParlezentreeApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.ParlezentreeDl FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ParlezentreeDl/Entities/parlez_entreeContext.cs">
+    <Files>
+      <File FileName="ParlezentreeApi/Dockerfile" Line="23" Column="1" />
+      <File FileName="ParlezentreeApi/Program.cs" Line="14" Column="58" />
+      <File FileName="ParlezentreeDl/Entities/User.cs" Line="13" Column="35" />
+      <File FileName="ParlezentreeDl/Entities/parlez_entreeContext.cs" Line="29" Column="1" />
+      <File FileName="ParlezentreeApi/Controllers/UserController.cs" Line="37" Column="18" />
+      <File FileName="ParlezentreeDl/IUserRepository.cs" Line="9" Column="1" />
+      <File FileName="ParlezentreeApi/appsettings.json" Line="10" Column="20" />
+      <File FileName="ParlezentreeApi/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="ParlezentreeDl/UserRepository.cs" Line="20" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Parlezentree_Backend" expanded="True">
-            <Node name="ParlezentreeApi" selected="True" />
+            <Node name="docker-compose" expanded="True" />
+            <Node name="ParlezentreeApi" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="ParlezentreeDl" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Entities" expanded="True">
+                <Node name="parlez_entreeContext.cs" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
