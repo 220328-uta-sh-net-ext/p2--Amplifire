@@ -9,19 +9,23 @@ using ParlezentreeDl;
 
 namespace ParlezentreeApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/")]
     public class UserController : Controller
     {
-        private IUserRepository user;
-        public UserController(IUserRepository user)
+        private IUserRepository userRepo;
+        public UserController(IUserRepository userRepo)
         {
-            this.user = user;
+            this.userRepo = userRepo;
         }
-     
+        [Route("login")]
         [HttpGet]
         public ActionResult Get(string email, string password)
         {
-            var userresult = user.getAllUser();
+            if(email==null || password == null)
+            {
+                return BadRequest("EmailId or Password cannot be empty.");
+            }
+            var userresult = userRepo.getAllUser();
             foreach (var user in userresult)
             {
                 if (user.EmailId == email && user.UserPassword == password)
@@ -43,8 +47,57 @@ namespace ParlezentreeApi.Controllers
                 }
             }
             return Ok("login");
+        }
+
+        [Route("User")]
+        [HttpPost]
+        public ActionResult Post([FromBody] ParlezentreeDl.Entities.User user)
+        {
+            if(user == null)
+            {
+                return BadRequest("User can not be null");
+            }
+            else if(user.ContactNo.ToString().Length != 10)
+            {
+                return BadRequest("Contact number can not be less than 10 digit");
+            }
+            else if (user.FirstName == null || user.FirstName == "")
+            {
+                return BadRequest("Invalid First Name,please enter valid First Name.");
+            }
+            else if (user.UserPassword.Length < 6)
+            {
+                return BadRequest("Password must be more than 6 character.");
+            }
+            else if (user.EmailId.ToString() == "")
+            {
+                return BadRequest("Invalid Email address,Please enter valid email address!!");
+
+            }
+            try
+            {
+
+            var result = userRepo.addUser(user);
+                return CreatedAtAction("Get", user);
+            }
+            catch(Exception ex)
+            {
+                if(ex.Message.ToString() == "An error occurred while saving the entity changes. See the inner exception for details.")
+                {
+                    return Ok("Emaild is already used.");
+                }
+                else
+                {
+
+                return BadRequest(ex.Message);
+                }
+            }
 
         }
+
+
+       
+       
 
     }
 
