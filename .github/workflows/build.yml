@@ -30,6 +30,7 @@ jobs:
   
   docker-image-build:
     runs-on: ubuntu-latest
+    needs: build
     
     steps:
     - uses: actions/checkout@v3 # providing the runner with our source code
