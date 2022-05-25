@@ -702,6 +702,19 @@
             "rid": "win"
           }
         }
+      },
+      "ParlezentreeDl/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5"
+        },
+        "compile": {
+          "bin/placeholder/ParlezentreeDl.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParlezentreeDl.dll": {}
+        }
       }
     }
   },
@@ -2046,6 +2059,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ParlezentreeDl/1.0.0": {
+      "type": "project",
+      "path": "../ParlezentreeDl/ParlezentreeDl.csproj",
+      "msbuildProject": "../ParlezentreeDl/ParlezentreeDl.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2053,6 +2071,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.5",
+      "ParlezentreeDl >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -2080,7 +2099,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/ParlezentreeDl.csproj": {
+              "projectPath": "/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/ParlezentreeDl.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
