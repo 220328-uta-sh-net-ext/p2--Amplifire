@@ -1,6 +1,8 @@
 ﻿<Properties StartupConfiguration="{DE842A19-5874-4D04-8F70-F1E4E9909552}|Default">
   <MonoDevelop.Ide.ItemProperties.ParlezentreeApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.ParlezentreeDl FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
@@ -10,9 +12,7 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Parlezentree_Backend" expanded="True">
-            <Node name="ParlezentreeApi" selected="True" />
-          </Node>
+          <Node name="Parlezentree_Backend" expanded="True" />
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">

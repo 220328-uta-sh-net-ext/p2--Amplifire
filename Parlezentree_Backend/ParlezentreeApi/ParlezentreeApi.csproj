@@ -26,4 +26,9 @@
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ParlezentreeDl\ParlezentreeDl.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

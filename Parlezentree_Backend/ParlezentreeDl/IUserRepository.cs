@@ -3,9 +3,9 @@ using ParlezentreeDl.Entities;
 
 namespace ParlezentreeDl
 {
-	public interface IUser
+	public interface IUserRepository
 	{
-		string getAllUser();
+		List<User> getAllUser();
 
 		string addUser(User user);
 
