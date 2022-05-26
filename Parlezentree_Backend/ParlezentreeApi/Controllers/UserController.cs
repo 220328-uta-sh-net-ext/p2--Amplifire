@@ -5,8 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ParlezentreeDl;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace ParlezentreeApi.Controllers
 {
     [Route("api/")]
@@ -21,7 +19,7 @@ namespace ParlezentreeApi.Controllers
         [HttpGet]
         public ActionResult Get(string email, string password)
         {
-            if(email==null || password == null)
+            if (email == null || password == null)
             {
                 return BadRequest("EmailId or Password cannot be empty.");
             }
@@ -53,11 +51,11 @@ namespace ParlezentreeApi.Controllers
         [HttpPost]
         public ActionResult Post([FromBody] ParlezentreeDl.Entities.User user)
         {
-            if(user == null)
+            if (user == null)
             {
                 return BadRequest("User can not be null");
             }
-            else if(user.ContactNo.ToString().Length != 10)
+            else if (user.ContactNo.ToString().Length != 10)
             {
                 return BadRequest("Contact number can not be less than 10 digit");
             }
@@ -77,19 +75,19 @@ namespace ParlezentreeApi.Controllers
             try
             {
 
-            var result = userRepo.addUser(user);
+                var result = userRepo.addUser(user);
                 return Ok(result);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                if(ex.Message.ToString() == "An error occurred while saving the entity changes. See the inner exception for details.")
+                if (ex.Message.ToString() == "An error occurred while saving the entity changes. See the inner exception for details.")
                 {
                     return Ok("Emaild is already used.");
                 }
                 else
                 {
 
-                return BadRequest(ex.Message);
+                    return BadRequest(ex.Message);
                 }
             }
 

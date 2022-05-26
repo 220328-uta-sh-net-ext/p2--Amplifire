@@ -12,7 +12,7 @@ public class UserRepository : IUserRepository
     {
         var name = user.FirstName;
         db.Users.Add(user);
-        var result=db.SaveChanges();
+        var result = db.SaveChanges();
         if (result == 1)
         {
             return "user is added.";
@@ -21,9 +21,8 @@ public class UserRepository : IUserRepository
         {
             return "user is not added.";
         }
-       
-    }
 
+    }
 
 
     public List<User> getAllUser()
@@ -45,6 +44,6 @@ public class UserRepository : IUserRepository
         {
             return "user is not updated.";
         }
-        }
+    }
 }
 

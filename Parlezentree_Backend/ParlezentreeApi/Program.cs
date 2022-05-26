@@ -3,12 +3,11 @@ using ParlezentreeDl;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
-var pokemonPolicy = "allowedOrigins";
+var userPolicy = "allowedOrigins";
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: pokemonPolicy,
+    options.AddPolicy(name: userPolicy,
             policy =>
             {
                 policy.WithOrigins("http://127.0.0.1:5500").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
@@ -16,7 +15,6 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ParlezentreeDl.Entities.parlez_entreeContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ParlezEntreeDb")));
@@ -24,7 +22,7 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
 if (app.Environment.IsProduction())
 {
     app.UseSwagger();
@@ -33,7 +31,7 @@ if (app.Environment.IsProduction())
 
 app.UseHttpsRedirection();
 
-app.UseCors(pokemonPolicy);
+app.UseCors(userPolicy);
 
 app.UseAuthorization();
 
