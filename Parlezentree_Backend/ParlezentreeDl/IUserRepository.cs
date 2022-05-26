@@ -3,14 +3,14 @@ using ParlezentreeDl.Entities;
 
 namespace ParlezentreeDl
 {
-	public interface IUserRepository
-	{
-		List<User> getAllUser();
+    public interface IUserRepository
+    {
+        List<User> getAllUser();
 
-		string addUser(User user);
+        string addUser(User user);
 
-		string updateUser(User user);
+        string updateUser(User user);
 
-	}
+    }
 }
 
