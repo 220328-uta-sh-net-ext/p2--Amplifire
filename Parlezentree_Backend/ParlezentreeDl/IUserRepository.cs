@@ -9,7 +9,7 @@ namespace ParlezentreeDl
 
 		string addUser(User user);
 
-		
+		string updateUser(User user);
 
 	}
 }
