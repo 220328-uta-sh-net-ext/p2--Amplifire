@@ -78,7 +78,7 @@ namespace ParlezentreeApi.Controllers
             {
 
             var result = userRepo.addUser(user);
-                return CreatedAtAction("Get", user);
+                return Ok(result);
             }
             catch(Exception ex)
             {
@@ -96,8 +96,42 @@ namespace ParlezentreeApi.Controllers
         }
 
 
-       
-       
+        [Route("User")]
+        // PUT api/values/5
+        [HttpPut]
+        public ActionResult Put(int id, [FromBody] ParlezentreeDl.Entities.User user)
+        {
+            if (user == null)
+            {
+                return BadRequest("User can not be null");
+            }
+            else if (user.ContactNo.ToString().Length != 10)
+            {
+                return BadRequest("Contact number can not be less than 10 digit");
+            }
+            else if (user.FirstName == null || user.FirstName == "")
+            {
+                return BadRequest("Invalid First Name,please enter valid First Name.");
+            }
+            else if (user.UserPassword.Length < 6)
+            {
+                return BadRequest("Password must be more than 6 character.");
+            }
+            else if (user.EmailId.ToString() == "")
+            {
+                return BadRequest("Invalid Email address,Please enter valid email address!!");
+
+            }
+            try
+            {
+                var result = userRepo.updateUser(user);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Something went wrong!!");
+            }
+        }
 
     }
 
