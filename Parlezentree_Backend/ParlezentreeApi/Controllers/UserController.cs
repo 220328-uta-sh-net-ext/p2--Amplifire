@@ -29,7 +29,7 @@ namespace ParlezentreeApi.Controllers
                 if (user.EmailId == email && user.UserPassword == password)
                 {
 
-                    return Ok("Login Sucessfull.");
+                    return Ok(user);
                 }
                 else
                 {

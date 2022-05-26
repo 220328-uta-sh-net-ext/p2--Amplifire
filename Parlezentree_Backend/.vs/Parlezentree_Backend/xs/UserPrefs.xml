@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{2F0302C2-65E9-45D9-9E9C-9E567CFC39DD}|Default">
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ParlezentreeDl/IUserRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ParlezentreeApi/Controllers/UserController.cs">
     <Files>
-      <File FileName="ParlezentreeApi/Program.cs" Line="12" Column="1" />
-      <File FileName="ParlezentreeDl/User.cs" Line="35" Column="23" />
-      <File FileName="ParlezentreeDl/IUser.cs" Line="13" Column="1" />
+      <File FileName="ParlezentreeApi/Program.cs" Line="5" Column="1" />
       <File FileName="ParlezentreeApi/appsettings.json" Line="1" Column="1" />
-      <File FileName="ParlezentreeApi/Controllers/UserController.cs" Line="127" Column="44" />
-      <File FileName="ParlezentreeDl/Entities/User.cs" Line="14" Column="1" />
-      <File FileName="ParlezentreeDl/Entities/parlez_entreeContext.cs" Line="53" Column="1" />
+      <File FileName="ParlezentreeApi/Controllers/UserController.cs" Line="127" Column="14" />
+      <File FileName="ParlezentreeDl/Entities/User.cs" Line="14" Column="47" />
+      <File FileName="ParlezentreeDl/Entities/parlez_entreeContext.cs" Line="25" Column="1" />
+      <File FileName="ParlezentreeDl/UserRepository.cs" Line="50" Column="1" />
+      <File FileName="ParlezentreeDl/IUserRepository.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,7 +22,6 @@
             <Node name="ParlezentreeDl" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Entities" expanded="True" />
-              <Node name="IUserRepository.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -33,11 +32,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/UserRepository.cs" relfile="ParlezentreeDl/UserRepository.cs" line="38" column="1" />
-      <Breakpoint file="/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/UserRepository.cs" relfile="ParlezentreeDl/UserRepository.cs" line="39" column="1" />
-      <Breakpoint file="/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeApi/Controllers/UserController.cs" relfile="ParlezentreeApi/Controllers/UserController.cs" line="127" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.ParlezentreeApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
