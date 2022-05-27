@@ -3,14 +3,14 @@
 namespace ParlezentreeDl;
 public class UserRepository : IUserRepository
 {
-    private parlez_entreeContext db;
+    readonly parlez_entreeContext db;
     public UserRepository(parlez_entreeContext db)
     {
         this.db = db;
     }
     public string addUser(User user)
     {
-        var name = user.FirstName;
+       
         db.Users.Add(user);
         var result = db.SaveChanges();
         if (result == 1)

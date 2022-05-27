@@ -10,11 +10,17 @@ namespace ParlezentreeApi.Controllers
     [Route("api/")]
     public class UserController : Controller
     {
-        private IUserRepository userRepo;
+        readonly IUserRepository userRepo;
         public UserController(IUserRepository userRepo)
         {
             this.userRepo = userRepo;
         }
+        /// <summary>
+        /// this methos is used to check login credentials
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="password"></param>
+        /// <returns>retun if sucessfully login or login fail</returns>
         [Route("login")]
         [HttpGet]
         public ActionResult Get(string email, string password)
@@ -47,6 +53,11 @@ namespace ParlezentreeApi.Controllers
             return Ok("login");
         }
 
+        /// <summary>
+        /// This methos creats the api for adding users into the database 
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns>if user is added or not</returns>
         [Route("User")]
         [HttpPost]
         public ActionResult Post([FromBody] ParlezentreeDl.Entities.User user)
@@ -93,7 +104,12 @@ namespace ParlezentreeApi.Controllers
 
         }
 
-
+        /// <summary>
+        /// This methods create the Api to update user by its id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="user"></param>
+        /// <returns>return the wether user is updated or not</returns>
         [Route("User")]
         // PUT api/values/5
         [HttpPut]
@@ -127,7 +143,8 @@ namespace ParlezentreeApi.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest("Something went wrong!!");
+                 
+                return BadRequest("Something went wrong!!" + ex.Message);
             }
         }
 
