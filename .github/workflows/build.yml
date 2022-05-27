@@ -13,7 +13,6 @@ env:
 jobs:
   ci:
     # We select which OS our VM's or runners to be
-    # windows is preferable
     runs-on: windows-latest
 
     steps:
