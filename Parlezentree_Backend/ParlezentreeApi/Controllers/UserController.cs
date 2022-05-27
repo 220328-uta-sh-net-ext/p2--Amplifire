@@ -15,42 +15,24 @@ namespace ParlezentreeApi.Controllers
         {
             this.userRepo = userRepo;
         }
-        /// <summary>
-        /// this methos is used to check login credentials
-        /// </summary>
-        /// <param name="email"></param>
-        /// <param name="password"></param>
-        /// <returns>retun if sucessfully login or login fail</returns>
-        [Route("login")]
-        [HttpGet]
-        public ActionResult Get(string email, string password)
+      
+         
+        [HttpGet("{id}")]
+        public ActionResult Get(int id)
         {
-            if (email == null || password == null)
+            if (id.ToString() == null)
             {
-                return BadRequest("EmailId or Password cannot be empty.");
+                return BadRequest("Id cannot be empty.");
             }
             var userresult = userRepo.getAllUser();
             foreach (var user in userresult)
             {
-                if (user.EmailId == email && user.UserPassword == password)
+                if (user.UserId == id)
                 {
-
                     return Ok(user);
                 }
-                else
-                {
-                    if (user.EmailId != email)
-                    {
-                        return Ok("Don't have an account with this emailId.");
-                    }
-                    else
-                    {
-                        return Ok("Invalid emailid or password.");
-                    }
-
-                }
             }
-            return Ok("login");
+            return Ok("Invalid Id");
         }
 
         /// <summary>
