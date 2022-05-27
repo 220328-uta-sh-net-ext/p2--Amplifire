@@ -48,7 +48,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore ${{env.WORKING_DIRECTORY}}
+      run: dotnet restore ${{env.WORKING_DIRECTORY}}/ParlezentreeApi
     - name: Test
       run: dotnet test --verbosity normal ${{env.WORKING_DIRECTORY}} --logger trx --collect:"XPlat Code Coverage" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover
       
