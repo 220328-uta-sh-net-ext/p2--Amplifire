@@ -50,7 +50,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ${{env.WORKING_DIRECTORY}}/ParlezentreeApi
     - name: Test
-      run: dotnet test --verbosity normal ${{env.WORKING_DIRECTORY}}/ParlezentreeApi --logger trx --collect:"XPlat Code Coverage" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover
+      run: dotnet test --verbosity normal ${{env.WORKING_DIRECTORY}} --logger trx --collect:"XPlat Code Coverage" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover
       
     - name: Build and analyze
       env:
