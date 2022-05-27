@@ -1,0 +1,214 @@
+{
+  "ParlezentreeDl.dll": {
+    "/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/UserRepository.cs": {
+      "ParlezentreeDl.UserRepository": {
+        "System.String ParlezentreeDl.UserRepository::addUser(ParlezentreeDl.Entities.User)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "21": 0,
+            "22": 0,
+            "25": 0
+          },
+          "Branches": [
+            {
+              "Line": 16,
+              "Offset": 44,
+              "EndOffset": 46,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 16,
+              "Offset": 44,
+              "EndOffset": 55,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Collections.Generic.List`1<ParlezentreeDl.Entities.User> ParlezentreeDl.UserRepository::getAllUser()": {
+          "Lines": {
+            "29": 0,
+            "30": 0,
+            "31": 0
+          },
+          "Branches": []
+        },
+        "System.String ParlezentreeDl.UserRepository::updateUser(ParlezentreeDl.Entities.User)": {
+          "Lines": {
+            "35": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "44": 0,
+            "45": 0,
+            "47": 0
+          },
+          "Branches": [
+            {
+              "Line": 39,
+              "Offset": 37,
+              "EndOffset": 39,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 37,
+              "EndOffset": 48,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void ParlezentreeDl.UserRepository::.ctor(ParlezentreeDl.Entities.parlez_entreeContext)": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/Entities/parlez_entreeContext.cs": {
+      "ParlezentreeDl.Entities.parlez_entreeContext": {
+        "Microsoft.EntityFrameworkCore.DbSet`1<ParlezentreeDl.Entities.User> ParlezentreeDl.Entities.parlez_entreeContext::get_Users()": {
+          "Lines": {
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.Void ParlezentreeDl.Entities.parlez_entreeContext::OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": [
+            {
+              "Line": 23,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 12,
+              "EndOffset": 29,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void ParlezentreeDl.Entities.parlez_entreeContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "53": 0
+          },
+          "Branches": []
+        },
+        "System.Void ParlezentreeDl.Entities.parlez_entreeContext::.ctor()": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Void ParlezentreeDl.Entities.parlez_entreeContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<ParlezentreeDl.Entities.parlez_entreeContext>)": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/harshtamakuwala/Documents/p2--Amplifire/Parlezentree_Backend/ParlezentreeDl/Entities/User.cs": {
+      "ParlezentreeDl.Entities.User": {
+        "System.Int32 ParlezentreeDl.Entities.User::get_UserId()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String ParlezentreeDl.Entities.User::get_FirstName()": {
+          "Lines": {
+            "9": 9
+          },
+          "Branches": []
+        },
+        "System.String ParlezentreeDl.Entities.User::get_LastName()": {
+          "Lines": {
+            "10": 9
+          },
+          "Branches": []
+        },
+        "System.String ParlezentreeDl.Entities.User::get_UserName()": {
+          "Lines": {
+            "11": 9
+          },
+          "Branches": []
+        },
+        "System.String ParlezentreeDl.Entities.User::get_EmailId()": {
+          "Lines": {
+            "12": 9
+          },
+          "Branches": []
+        },
+        "System.String ParlezentreeDl.Entities.User::get_UserPassword()": {
+          "Lines": {
+            "13": 5
+          },
+          "Branches": []
+        },
+        "System.Decimal ParlezentreeDl.Entities.User::get_ContactNo()": {
+          "Lines": {
+            "14": 4
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
