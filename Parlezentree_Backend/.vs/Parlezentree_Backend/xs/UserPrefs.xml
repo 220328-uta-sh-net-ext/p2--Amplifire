@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{2F0302C2-65E9-45D9-9E9C-9E567CFC39DD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ParlezentreeApi/Controllers/UserController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ParlezentreeApi/Program.cs">
     <Files>
-      <File FileName="ParlezentreeApi/Program.cs" Line="33" Column="1" />
+      <File FileName="ParlezentreeApi/Program.cs" Line="42" Column="1" />
       <File FileName="ParlezentreeApi/appsettings.json" Line="1" Column="1" />
-      <File FileName="ParlezentreeApi/Controllers/UserController.cs" Line="112" Column="62" />
+      <File FileName="ParlezentreeApi/Controllers/UserController.cs" Line="21" Column="40" />
       <File FileName="ParlezentreeDl/Entities/User.cs" Line="9" Column="32" />
       <File FileName="ParlezentreeDl/Entities/parlez_entreeContext.cs" Line="25" Column="1" />
       <File FileName="ParlezentreeDl/UserRepository.cs" Line="6" Column="13" />
       <File FileName="ParlezentreeDl/IUserRepository.cs" Line="23" Column="23" />
       <File FileName="ParlezentreeApi/Dockerfile" Line="1" Column="1" />
       <File FileName="ParlezentreeTest/UserModelTest.cs" Line="19" Column="52" />
+      <File FileName="ParlezentreeApi/Controllers/LoginController.cs" Line="20" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

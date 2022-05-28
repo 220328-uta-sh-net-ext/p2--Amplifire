@@ -7,7 +7,7 @@ using ParlezentreeDl;
 
 namespace ParlezentreeApi.Controllers
 {
-    [Route("api/")]
+    [Route("api/[controller]")]
     public class UserController : Controller
     {
         readonly IUserRepository userRepo;
@@ -40,7 +40,7 @@ namespace ParlezentreeApi.Controllers
         /// </summary>
         /// <param name="user"></param>
         /// <returns>if user is added or not</returns>
-        [Route("User")]
+      
         [HttpPost]
         public ActionResult Post([FromBody] ParlezentreeDl.Entities.User user)
         {
@@ -92,7 +92,7 @@ namespace ParlezentreeApi.Controllers
         /// <param name="id"></param>
         /// <param name="user"></param>
         /// <returns>return the wether user is updated or not</returns>
-        [Route("User")]
+       
         // PUT api/values/5
         [HttpPut]
         public ActionResult Put(int id, [FromBody] ParlezentreeDl.Entities.User user)
