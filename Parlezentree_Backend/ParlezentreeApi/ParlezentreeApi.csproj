@@ -25,6 +25,7 @@
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Microsoft.AspNet.WebApi.Cors" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ParlezentreeDl\ParlezentreeDl.csproj">

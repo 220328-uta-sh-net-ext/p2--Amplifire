@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using ParlezentreeDl;
 
@@ -10,6 +11,7 @@ using ParlezentreeDl;
 namespace ParlezentreeApi.Controllers
 {
     [Route("api/[controller]")]
+    [EnableCors("pokemonPolicy")]
     public class LoginController : Controller
     {
         readonly IUserRepository userRepo;
