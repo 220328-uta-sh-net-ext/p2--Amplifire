@@ -9,7 +9,7 @@ using ParlezentreeDl;
 namespace ParlezentreeApi.Controllers
 {
     [Route("api/[controller]")]
-    [EnableCors("pokemonPolicy")]
+    [EnableCors("allowedOrigins")]
     public class UserController : Controller
     {
         readonly IUserRepository userRepo;
