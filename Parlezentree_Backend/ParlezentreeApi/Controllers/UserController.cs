@@ -121,7 +121,7 @@ namespace ParlezentreeApi.Controllers
             try
             {
                 var result = userRepo.updateUser(user);
-                return Ok(result);
+                return Ok(user);
             }
             catch (Exception ex)
             {
