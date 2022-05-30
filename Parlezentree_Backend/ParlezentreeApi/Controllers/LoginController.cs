@@ -38,23 +38,11 @@ namespace ParlezentreeApi.Controllers
             {
                 if (user.EmailId == email && user.UserPassword == password)
                 {
-
                     return Ok(user);
                 }
-                else
-                {
-                    if (user.EmailId != email)
-                    {
-                        return Ok("Don't have an account with this emailId.");
-                    }
-                    else
-                    {
-                        return Ok("Invalid emailid or password.");
-                    }
-
-                }
+                
             }
-            return Ok("login");
+            return Ok("Invalid emailid or password.");
         }
 
     }
